@@ -1,0 +1,15 @@
+
+[app]
+name = "app1"
+
+[db]
+dsn = "dbname=mabo user=mabo password=mabo2018 port=6432"
+dbname = "mabo"
+user = "mabo"
+password = "mabo2018"
+
+[logging]
+
+conf = "logging.conf"
+
+    
