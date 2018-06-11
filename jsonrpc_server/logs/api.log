@@ -1,0 +1,22 @@
+2018-06-11 16:45:28,998 DEBUG api {'dsn': 'dbname=mabo user=mabo password=mabo2018 port=6432', 'dbname': 'mabo', 'user': 'mabo', 'password': 'mabo2018'}
+2018-06-11 16:45:29,022 INFO main start
+2018-06-11 16:47:02,978 DEBUG api select None('{"t": null}') as None
+2018-06-11 16:47:04,855 DEBUG api 127.0.0.1,/,select None('{"t": null}') as None
+2018-06-11 16:47:18,207 DEBUG api select get_date_v1('{"t": "20"}') as get_date_v1
+2018-06-11 16:47:19,031 DEBUG api 127.0.0.1,/q,select get_date_v1('{"t": "20"}') as get_date_v1
+2018-06-11 16:47:21,047 DEBUG api select get_date_v1('{"t": "20"}') as get_date_v1
+2018-06-11 16:47:21,049 DEBUG api 127.0.0.1,/q,select get_date_v1('{"t": "20"}') as get_date_v1
+2018-06-11 16:47:21,789 DEBUG api select get_date_v1('{"t": "20"}') as get_date_v1
+2018-06-11 16:47:21,792 DEBUG api 127.0.0.1,/q,select get_date_v1('{"t": "20"}') as get_date_v1
+2018-06-11 16:47:22,442 DEBUG api select get_date_v1('{"t": "20"}') as get_date_v1
+2018-06-11 16:47:22,445 DEBUG api 127.0.0.1,/q,select get_date_v1('{"t": "20"}') as get_date_v1
+2018-06-11 16:54:18,708 DEBUG api select get_date_v1('{"t": "20"}') as get_date_v1
+2018-06-11 16:54:18,712 DEBUG api 127.0.0.1,/q,select get_date_v1('{"t": "20"}') as get_date_v1
+2018-06-11 16:54:26,856 DEBUG api select get_date_v1('{"t": "20"}') as get_date_v1
+2018-06-11 16:54:26,859 DEBUG api 127.0.0.1,/q,select get_date_v1('{"t": "20"}') as get_date_v1
+2018-06-11 16:55:54,549 DEBUG api select get_date_v1('{"t": "20"}') as get_date_v1
+2018-06-11 16:55:54,550 DEBUG api 127.0.0.1,/q,select get_date_v1('{"t": "20"}') as get_date_v1
+2018-06-11 17:03:59,166 DEBUG api select get_date_v1('{"t": "20"}') as get_date_v1
+2018-06-11 17:03:59,170 DEBUG api 127.0.0.1,/q,select get_date_v1('{"t": "20"}') as get_date_v1
+2018-06-11 17:04:00,067 DEBUG api select get_date_v1('{"t": "20"}') as get_date_v1
+2018-06-11 17:04:00,069 DEBUG api 127.0.0.1,/q,select get_date_v1('{"t": "20"}') as get_date_v1
