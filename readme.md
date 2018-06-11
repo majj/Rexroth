@@ -1,6 +1,7 @@
 
-
 # install
+
+> mkdir data
 
 > pip install watchdog
 > pip install websockets
