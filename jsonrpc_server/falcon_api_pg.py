@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+
 
 import logging
 import json
@@ -72,5 +75,34 @@ class PgResource(object):
         
     def on_post(self, req, resp):
         """
-        
+        handles post requests
         """
+        
+        log.debug("post")
+        
+        
+        
+        data = req.json
+        
+        log.debug(data)
+        
+        #v = json.loads(raw_json)
+        
+        #log.debug(v)
+        
+        resp.status = falcon.HTTP_200
+        
+        resp.json = {"jsonrpc":"2","method":"post", "data":data}
+        
+    def on_put(self, req, resp):
+        """
+        handles post requests
+        """
+        
+        log.debug("put")
+        
+        resp.status = falcon.HTTP_200
+        
+        resp.json = {"jsonrpc":"2","method":"put"}
+        
+        

@@ -1,22 +1,24 @@
-2018-06-11 16:45:28,998 DEBUG api {'dsn': 'dbname=mabo user=mabo password=mabo2018 port=6432', 'dbname': 'mabo', 'user': 'mabo', 'password': 'mabo2018'}
-2018-06-11 16:45:29,022 INFO main start
-2018-06-11 16:47:02,978 DEBUG api select None('{"t": null}') as None
-2018-06-11 16:47:04,855 DEBUG api 127.0.0.1,/,select None('{"t": null}') as None
-2018-06-11 16:47:18,207 DEBUG api select get_date_v1('{"t": "20"}') as get_date_v1
-2018-06-11 16:47:19,031 DEBUG api 127.0.0.1,/q,select get_date_v1('{"t": "20"}') as get_date_v1
-2018-06-11 16:47:21,047 DEBUG api select get_date_v1('{"t": "20"}') as get_date_v1
-2018-06-11 16:47:21,049 DEBUG api 127.0.0.1,/q,select get_date_v1('{"t": "20"}') as get_date_v1
-2018-06-11 16:47:21,789 DEBUG api select get_date_v1('{"t": "20"}') as get_date_v1
-2018-06-11 16:47:21,792 DEBUG api 127.0.0.1,/q,select get_date_v1('{"t": "20"}') as get_date_v1
-2018-06-11 16:47:22,442 DEBUG api select get_date_v1('{"t": "20"}') as get_date_v1
-2018-06-11 16:47:22,445 DEBUG api 127.0.0.1,/q,select get_date_v1('{"t": "20"}') as get_date_v1
-2018-06-11 16:54:18,708 DEBUG api select get_date_v1('{"t": "20"}') as get_date_v1
-2018-06-11 16:54:18,712 DEBUG api 127.0.0.1,/q,select get_date_v1('{"t": "20"}') as get_date_v1
-2018-06-11 16:54:26,856 DEBUG api select get_date_v1('{"t": "20"}') as get_date_v1
-2018-06-11 16:54:26,859 DEBUG api 127.0.0.1,/q,select get_date_v1('{"t": "20"}') as get_date_v1
-2018-06-11 16:55:54,549 DEBUG api select get_date_v1('{"t": "20"}') as get_date_v1
-2018-06-11 16:55:54,550 DEBUG api 127.0.0.1,/q,select get_date_v1('{"t": "20"}') as get_date_v1
-2018-06-11 17:03:59,166 DEBUG api select get_date_v1('{"t": "20"}') as get_date_v1
-2018-06-11 17:03:59,170 DEBUG api 127.0.0.1,/q,select get_date_v1('{"t": "20"}') as get_date_v1
-2018-06-11 17:04:00,067 DEBUG api select get_date_v1('{"t": "20"}') as get_date_v1
-2018-06-11 17:04:00,069 DEBUG api 127.0.0.1,/q,select get_date_v1('{"t": "20"}') as get_date_v1
+2018-06-12 07:34:10,899 ERROR waitress Exception when serving /
+Traceback (most recent call last):
+  File "C:\Python\Python36\lib\site-packages\waitress\channel.py", line 338, in service
+    task.service()
+  File "C:\Python\Python36\lib\site-packages\waitress\task.py", line 169, in service
+    self.execute()
+  File "C:\Python\Python36\lib\site-packages\waitress\task.py", line 399, in execute
+    app_iter = self.channel.server.application(env, start_response)
+  File "C:\Python\Python36\lib\site-packages\falcon\api.py", line 244, in __call__
+    responder(req, resp, **params)
+  File "G:\Repos\Rexroth\jsonrpc_server\falcon_api_pg.py", line 95, in on_post
+    resp.json = {"jsonrpc":"2","method":"post", data:data}
+TypeError: unhashable type: 'dict'
+2018-06-12 07:34:50,127 DEBUG api {'dsn': 'dbname=mabo user=mabo password=mabo2018 port=6432', 'dbname': 'mabo', 'user': 'mabo', 'password': 'mabo2018'}
+2018-06-12 07:34:50,143 INFO main start
+2018-06-12 07:35:28,085 DEBUG api post
+2018-06-12 07:35:35,510 DEBUG api {'key1': 'value1', 'key2': 'value2'}
+2018-06-12 07:35:35,516 DEBUG api put
+2018-06-12 07:35:50,575 DEBUG api post
+2018-06-12 07:35:50,576 DEBUG api {'key1': 'value1', 'key2': 'value2'}
+2018-06-12 07:35:50,580 DEBUG api put
+2018-06-12 07:36:10,446 DEBUG api post
+2018-06-12 07:36:10,447 DEBUG api {'key1': 'value1', 'key2': 'value2'}
+2018-06-12 07:36:10,453 DEBUG api put

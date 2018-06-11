@@ -1,0 +1,22 @@
+2018-06-12 07:32:11,091 ERROR waitress Exception when serving /
+Traceback (most recent call last):
+  File "C:\Python\Python36\lib\site-packages\waitress\channel.py", line 338, in service
+    task.service()
+  File "C:\Python\Python36\lib\site-packages\waitress\task.py", line 169, in service
+    self.execute()
+  File "C:\Python\Python36\lib\site-packages\waitress\task.py", line 399, in execute
+    app_iter = self.channel.server.application(env, start_response)
+  File "C:\Python\Python36\lib\site-packages\falcon\api.py", line 244, in __call__
+    responder(req, resp, **params)
+  File "G:\Repos\Rexroth\jsonrpc_server\falcon_api_pg.py", line 85, in on_post
+    raw_json = req.json()
+TypeError: 'dict' object is not callable
+2018-06-12 07:32:33,147 DEBUG api {'dsn': 'dbname=mabo user=mabo password=mabo2018 port=6432', 'dbname': 'mabo', 'user': 'mabo', 'password': 'mabo2018'}
+2018-06-12 07:32:33,166 INFO main start
+2018-06-12 07:32:44,120 DEBUG api post
+2018-06-12 07:32:44,120 DEBUG api {'key1': 'value1', 'key2': 'value2'}
+2018-06-12 07:32:44,124 DEBUG api put
+2018-06-12 07:34:02,425 DEBUG api {'dsn': 'dbname=mabo user=mabo password=mabo2018 port=6432', 'dbname': 'mabo', 'user': 'mabo', 'password': 'mabo2018'}
+2018-06-12 07:34:02,454 INFO main start
+2018-06-12 07:34:10,898 DEBUG api post
+2018-06-12 07:34:10,898 DEBUG api {'key1': 'value1', 'key2': 'value2'}

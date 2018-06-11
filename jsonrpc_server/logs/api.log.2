@@ -1,0 +1,27 @@
+2018-06-12 07:28:07,924 ERROR waitress Exception when serving /
+Traceback (most recent call last):
+  File "C:\Python\Python36\lib\site-packages\waitress\channel.py", line 338, in service
+    task.service()
+  File "C:\Python\Python36\lib\site-packages\waitress\task.py", line 169, in service
+    self.execute()
+  File "C:\Python\Python36\lib\site-packages\waitress\task.py", line 399, in execute
+    app_iter = self.channel.server.application(env, start_response)
+  File "C:\Python\Python36\lib\site-packages\falcon\api.py", line 244, in __call__
+    responder(req, resp, **params)
+  File "G:\Repos\Rexroth\jsonrpc_server\falcon_api_pg.py", line 85, in on_post
+    v = json.loads(raw_json)
+  File "C:\Python\Python36\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Python\Python36\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Python\Python36\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2018-06-12 07:29:45,872 DEBUG api {'dsn': 'dbname=mabo user=mabo password=mabo2018 port=6432', 'dbname': 'mabo', 'user': 'mabo', 'password': 'mabo2018'}
+2018-06-12 07:29:45,892 INFO main start
+2018-06-12 07:29:52,400 DEBUG api post
+2018-06-12 07:29:52,401 DEBUG api b''
+2018-06-12 07:29:52,408 DEBUG api put
+2018-06-12 07:32:02,016 DEBUG api {'dsn': 'dbname=mabo user=mabo password=mabo2018 port=6432', 'dbname': 'mabo', 'user': 'mabo', 'password': 'mabo2018'}
+2018-06-12 07:32:02,032 INFO main start
+2018-06-12 07:32:11,090 DEBUG api post

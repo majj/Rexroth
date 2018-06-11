@@ -1,0 +1,16 @@
+2018-06-12 07:27:06,655 ERROR waitress Exception when serving /
+Traceback (most recent call last):
+  File "C:\Python\Python36\lib\site-packages\waitress\channel.py", line 338, in service
+    task.service()
+  File "C:\Python\Python36\lib\site-packages\waitress\task.py", line 169, in service
+    self.execute()
+  File "C:\Python\Python36\lib\site-packages\waitress\task.py", line 399, in execute
+    app_iter = self.channel.server.application(env, start_response)
+  File "C:\Python\Python36\lib\site-packages\falcon\api.py", line 244, in __call__
+    responder(req, resp, **params)
+  File "G:\Repos\Rexroth\jsonrpc_server\falcon_api_pg.py", line 85, in on_post
+    v = json.loads(raw_json, 'utf-8')
+TypeError: loads() takes 1 positional argument but 2 were given
+2018-06-12 07:27:59,643 DEBUG api {'dsn': 'dbname=mabo user=mabo password=mabo2018 port=6432', 'dbname': 'mabo', 'user': 'mabo', 'password': 'mabo2018'}
+2018-06-12 07:27:59,660 INFO main start
+2018-06-12 07:28:07,923 DEBUG api post
