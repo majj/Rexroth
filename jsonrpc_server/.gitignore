@@ -2,8 +2,7 @@
 data/
 build/
 *.log
-
-jsonrpc_server/logs/
+logs/
 
 __pycache__/
 *.pyc

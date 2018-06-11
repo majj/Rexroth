@@ -22,3 +22,8 @@ TypeError: unhashable type: 'dict'
 2018-06-12 07:36:10,446 DEBUG api post
 2018-06-12 07:36:10,447 DEBUG api {'key1': 'value1', 'key2': 'value2'}
 2018-06-12 07:36:10,453 DEBUG api put
+2018-06-12 07:37:57,587 DEBUG api {'dsn': 'dbname=mabo user=mabo password=mabo2018 port=6432', 'dbname': 'mabo', 'user': 'mabo', 'password': 'mabo2018'}
+2018-06-12 07:37:57,602 INFO main start
+2018-06-12 07:38:03,477 DEBUG api post
+2018-06-12 07:38:03,478 DEBUG api {'key1': 'value1', 'key2': 'value2'}
+2018-06-12 07:38:03,486 DEBUG api put
