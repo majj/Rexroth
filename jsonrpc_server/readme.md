@@ -8,10 +8,15 @@ install plv8 1.4.10
 create CoffeeScript function in pg: get_date_v1.sql
 
 > pip install falcon
+
 > pip install falcon-jsonify
+
 > pip install psycopg2
+
 > pip install requests
+
 > pip install waitress
+
 > pip install toml
 
 # run
